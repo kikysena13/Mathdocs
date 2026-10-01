@@ -1,0 +1,80 @@
+PENJELASAN NOMOR 5
+Refleksi garis y = 2x terhadap sumbu Y
+
+Diketahui persamaan garis:
+
+    y = 2x
+
+Refleksi terhadap sumbu Y menggunakan aturan:
+
+    (x, y) → (−x, y)
+
+Artinya, nilai x diganti dengan −x, sedangkan y tetap.
+
+Langkah 1: Ganti x dengan −x
+
+    y = 2(−x)
+
+Langkah 2: Sederhanakan
+
+    y = −2x
+
+Jadi, persamaan hasil refleksi terhadap sumbu Y adalah:
+
+    y = −2x
+
+Mengapa tanda 2x berubah menjadi −2x?
+Karena:
+
+    2(−x) = −2x
+
+Koefisien garis berubah dari 2 menjadi −2. Artinya, kemiringan garis
+berubah arah, tetapi garis tetap melalui titik pusat (0, 0).
+
+Titik-titik pada garis awal:
+    Jika x = 1, maka y = 2(1) = 2, sehingga titiknya (1, 2).
+    Jika x = 0, maka y = 0, sehingga titiknya (0, 0).
+    Jika x = −1, maka y = 2(−1) = −2, sehingga titiknya (−1, −2).
+
+Setelah direfleksikan terhadap sumbu Y:
+    (1, 2) → (−1, 2)
+    (0, 0) → (0, 0)
+    (−1, −2) → (1, −2)
+
+Pengecekan:
+    Untuk x = −1 pada persamaan hasil:
+
+        y = −2(−1)
+        y = 2
+
+    Jadi titik (−1, 2) benar berada pada garis hasil refleksi.
+
+Kesimpulan:
+    Garis awal     : y = 2x
+    Hasil refleksi : y = −2x
+
+Kedua garis berpotongan di titik (0, 0) dan saling bercermin terhadap
+sumbu Y.
+
+Mengapa kedua garis bertemu di titik (0, 0)?
+Untuk mencari titik perpotongan, samakan nilai y dari kedua persamaan:
+
+    2x = −2x
+
+Tambahkan 2x ke kedua ruas:
+
+    4x = 0
+    x = 0
+
+Masukkan x = 0 ke salah satu persamaan:
+
+    y = 2(0)
+    y = 0
+
+Jadi titik perpotongannya adalah:
+
+    (x, y) = (0, 0)
+
+Angka 2 pada y = 2x dan −2 pada y = −2x adalah kemiringan garis,
+bukan nilai y titik perpotongan. Kedua garis memiliki kemiringan yang
+berlawanan, sehingga hanya bertemu di titik pusat.

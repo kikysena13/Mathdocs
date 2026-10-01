@@ -1,0 +1,106 @@
+PENJELASAN NOMOR 4
+Refleksi garis y = 6 − 3x terhadap sumbu X
+
+Diketahui persamaan garis:
+
+    y = 6 − 3x
+
+Refleksi terhadap sumbu X menggunakan aturan:
+
+    (x, y) → (x, −y)
+
+Artinya, nilai x tetap, sedangkan y diganti menjadi −y.
+
+Langkah 1: Ganti y dengan −y
+
+    −y = 6 − 3x
+
+Langkah 2: Kalikan kedua ruas dengan −1
+
+    (−1)(−y) = (−1)(6 − 3x)
+
+    y = −6 + 3x
+
+Langkah 3: Susun ulang bentuk persamaan
+
+    y = 3x − 6
+
+Jadi, persamaan hasil refleksi terhadap sumbu X adalah:
+
+    y = 3x − 6
+
+Mengapa persamaannya berubah?
+Karena refleksi terhadap sumbu X mengubah setiap titik:
+
+    (x, y) → (x, −y)
+
+Koordinat x tidak berubah, tetapi koordinat y berubah tanda.
+
+Contoh titik:
+    Pada garis awal, ambil x = 0:
+
+        y = 6 − 3(0)
+        y = 6
+
+    Jadi salah satu titiknya adalah (0, 6).
+
+    Setelah direfleksikan terhadap sumbu X:
+
+        (0, 6) → (0, −6)
+
+    Cek pada persamaan hasil:
+
+        y = 3(0) − 6
+        y = −6
+
+    Hasilnya sesuai.
+
+Kesimpulan:
+    Garis awal     : y = 6 − 3x
+    Hasil refleksi : y = 3x − 6
+
+Kedua garis memiliki kemiringan yang berlawanan dan saling bercermin
+terhadap sumbu X.
+
+Catatan tentang titik potong sumbu:
+
+1. Titik potong garis awal dengan sumbu Y
+   Untuk mencari titik potong sumbu Y, gunakan x = 0:
+
+       y = 6 − 3(0)
+       y = 6
+
+   Jadi titiknya adalah (0, 6).
+
+2. Titik potong garis awal dengan sumbu X
+   Untuk mencari titik potong sumbu X, gunakan y = 0:
+
+       0 = 6 − 3x
+       3x = 6
+       x = 2
+
+   Jadi titiknya adalah (2, 0), bukan (3, 0).
+
+3. Titik potong garis hasil refleksi dengan sumbu Y
+   Gunakan x = 0:
+
+       y = 3(0) − 6
+       y = −6
+
+   Jadi titiknya adalah (0, −6).
+
+4. Titik potong garis hasil refleksi dengan sumbu X
+   Gunakan y = 0:
+
+       0 = 3x − 6
+       3x = 6
+       x = 2
+
+   Jadi titiknya adalah (2, 0).
+
+Kesimpulan titik potong:
+    Garis awal     : sumbu X = (2, 0), sumbu Y = (0, 6)
+    Hasil refleksi : sumbu X = (2, 0), sumbu Y = (0, −6)
+
+Angka 3 pada persamaan adalah koefisien x atau kemiringan garis,
+bukan koordinat titik potong sumbu X.

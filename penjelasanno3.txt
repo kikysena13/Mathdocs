@@ -1,0 +1,71 @@
+PENJELASAN NOMOR 3
+Refleksi kurva y = x² − 23x + 132 terhadap sumbu Y
+
+Diketahui:
+    y = x² − 23x + 132
+
+Refleksi terhadap sumbu Y menggunakan aturan:
+    (x, y) → (−x, y)
+
+Artinya, nilai x diganti dengan −x, sedangkan y tetap.
+
+Langkah 1: Ganti setiap x dengan −x
+
+    y = (−x)² − 23(−x) + 132
+
+Langkah 2: Sederhanakan
+
+    (−x)² = x²
+    −23(−x) = +23x
+
+Maka:
+
+    y = x² + 23x + 132
+
+Jadi, persamaan hasil refleksi terhadap sumbu Y adalah:
+
+    y = x² + 23x + 132
+
+Mengapa tanda −23x berubah menjadi +23x?
+Karena suku tersebut mengandung dua tanda negatif:
+
+    −23(−x) = +23x
+
+Sementara itu, kuadrat dari bilangan negatif tetap positif:
+
+    (−x)² = x²
+
+Kesimpulan:
+    Kurva awal       : y = x² − 23x + 132
+    Kurva hasil       : y = x² + 23x + 132
+
+Pada grafik, kedua parabola memiliki bentuk yang sama dan saling
+bercermin terhadap sumbu Y. Jika titik (x, y) berada pada kurva awal,
+maka titik (−x, y) berada pada kurva hasil refleksi.
+
+Dari mana angka 11 berasal?
+    Angka 11 dipilih dari akar-akar persamaan kuadrat.
+    Kita faktorkan:
+
+        x² − 23x + 132 = (x − 11)(x − 12)
+
+    Jadi, kurva memotong sumbu X pada x = 11 dan x = 12.
+    Nilai 11 dipakai sebagai contoh titik yang mudah dihitung.
+
+Contoh:
+    Untuk x = 11 pada kurva awal:
+        y = 11² − 23(11) + 132
+        y = 121 − 253 + 132
+        y = 0
+
+    Titiknya adalah (11, 0).
+    Setelah direfleksikan terhadap sumbu Y:
+        (11, 0) → (−11, 0)
+
+    Pada kurva hasil:
+        y = (−11)² + 23(−11) + 132
+        y = 121 − 253 + 132
+        y = 0
+
+Jadi, titik hasil refleksinya benar-benar berada pada kurva
+y = x² + 23x + 132.
