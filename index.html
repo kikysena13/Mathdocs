@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Mathematics Handbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particleContainer" class="particle-container"></div>
+    
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">∑</span>
+                <h1>Programmer<span class="accent"> Mathematics</span></h1>
+            </div>
+            
+            <nav class="header-nav">
+                <button id="tocBtn" class="nav-btn" title="Table of Contents">
+                    <span>📚 TOC</span>
+                </button>
+                <button id="searchBtn" class="nav-btn" title="Search">
+                    <span>🔍 Search</span>
+                </button>
+                <button id="bookmarkBtn" class="nav-btn" title="Bookmarks">
+                    <span>🔖 Bookmarks</span>
+                </button>
+                <button id="quizBtn" class="nav-btn" title="Quiz">
+                    <span>❓ Quiz</span>
+                </button>
+            </nav>
+
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-label">Progress</span>
+                    <span id="progressPercent" class="stat-value">0%</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Pages</span>
+                    <span id="pageIndicator" class="stat-value">1/50</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Sidebar Career Roadmap -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">🚀 Career Roadmap</h3>
+            <div class="roadmap-items">
+                <div class="roadmap-item" data-path="ai">
+                    <div class="roadmap-icon">🤖</div>
+                    <div class="roadmap-name">AI Engineer</div>
+                    <div class="roadmap-chapters">5,6,2,4</div>
+                </div>
+                <div class="roadmap-item" data-path="game">
+                    <div class="roadmap-icon">🎮</div>
+                    <div class="roadmap-name">Game Dev</div>
+                    <div class="roadmap-chapters">1,2,3,5</div>
+                </div>
+                <div class="roadmap-item" data-path="security">
+                    <div class="roadmap-icon">🔐</div>
+                    <div class="roadmap-name">Cybersecurity</div>
+                    <div class="roadmap-chapters">6,3,4,7</div>
+                </div>
+                <div class="roadmap-item" data-path="backend">
+                    <div class="roadmap-icon">⚙️</div>
+                    <div class="roadmap-name">Backend Dev</div>
+                    <div class="roadmap-chapters">1,5,3,7</div>
+                </div>
+                <div class="roadmap-item" data-path="datascience">
+                    <div class="roadmap-icon">📊</div>
+                    <div class="roadmap-name">Data Science</div>
+                    <div class="roadmap-chapters">2,4,1,5</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Book Container -->
+        <div class="book-container">
+            <!-- Book Pages -->
+            <div class="book">
+                <!-- Cover Page -->
+                <div class="page page-cover" data-page="0">
+                    <div class="page-content">
+                        <div class="cover-content">
+                            <div class="cover-badge">HANDBOOK</div>
+                            <h1 class="cover-title">Programmer<br>Mathematics</h1>
+                            <p class="cover-subtitle">Matematika Penting untuk Engineer Modern</p>
+                            <div class="cover-stats">
+                                <div class="stat-item">
+                                    <span class="stat-num">7</span>
+                                    <span class="stat-text">Chapters</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-num">50+</span>
+                                    <span class="stat-text">Pages</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-num">∞</span>
+                                    <span class="stat-text">Knowledge</span>
+                                </div>
+                            </div>
+                            <p class="cover-footer">Interactive Educational Platform • v1.0 • 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOC Page -->
+                <div class="page page-toc" data-page="1">
+                    <div class="page-content">
+                        <h2 class="page-title">Table of Contents</h2>
+                        <div class="toc-list">
+                            <div class="toc-item" data-chapter="1">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">Linear Algebra</span>
+                                <span class="toc-pages">→ pp. 2-8</span>
+                            </div>
+                            <div class="toc-item" data-chapter="2">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">Calculus</span>
+                                <span class="toc-pages">→ pp. 9-15</span>
+                            </div>
+                            <div class="toc-item" data-chapter="3">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">Discrete Mathematics</span>
+                                <span class="toc-pages">→ pp. 16-22</span>
+                            </div>
+                            <div class="toc-item" data-chapter="4">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">Probability & Statistics</span>
+                                <span class="toc-pages">→ pp. 23-29</span>
+                            </div>
+                            <div class="toc-item" data-chapter="5">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">Computational Complexity</span>
+                                <span class="toc-pages">→ pp. 30-36</span>
+                            </div>
+                            <div class="toc-item" data-chapter="6">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">Cryptography Mathematics</span>
+                                <span class="toc-pages">→ pp. 37-43</span>
+                            </div>
+                            <div class="toc-item" data-chapter="7">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">Numerical Methods</span>
+                                <span class="toc-pages">→ pp. 44-50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 1: Linear Algebra -->
+                <div class="page" data-page="2" data-chapter="1">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 1: Linear Algebra</h2>
+                        <p class="chapter-subtitle">Fondasi Matematika untuk Machine Learning & Graphics</p>
+                        <h3 class="section-title">1.1 Matrix & Vector Operations</h3>
+                        <p class="content-text">
+                            Linear Algebra adalah fondasi utama dalam computer science modern, khususnya dalam machine learning, computer graphics, dan game development. Setiap pixel di layar, setiap model neural network, dan setiap transformasi 3D didasarkan pada operasi matrix dan vector.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Matrix A</strong> dengan dimensi m×n:</p>
+                            <p>A = [a₁₁ a₁₂ ... a₁ₙ]</p>
+                            <p>    [a₂₁ a₂₂ ... a₂ₙ]</p>
+                            <p>    [...  ...  ... ...]</p>
+                            <p>    [aₘ₁ aₘ₂ ... aₘₙ]</p>
+                        </div>
+                        <p class="content-text"><strong>Real-world Example:</strong> Dalam CNN (Convolutional Neural Networks), setiap layer operasi adalah matrix multiplication. Transformasi gambar 224×224 pixels direpresentasikan sebagai matrix 224×224 yang kemudian diproses melalui filters (matrices) untuk ekstraksi features.</p>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="3" data-chapter="1">
+                    <div class="page-content">
+                        <h3 class="section-title">1.2 Eigenvalue & Eigenvector</h3>
+                        <p class="content-text">
+                            Eigenvalue dan eigenvector adalah konsep fundamental dalam analisis matrix. Untuk matrix persegi A, vektor non-zero v dan scalar λ yang memenuhi Av = λv disebut eigenvector dan eigenvalue.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Menghitung Eigenvalue</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>// Eigenvalue computation (simplified)
+function powerIteration(matrix, iterations = 100) {
+    let v = matrix[0].map(() => Math.random());
+    
+    for (let i = 0; i < iterations; i++) {
+        // Multiply matrix by vector
+        let Av = matrixMultiply(matrix, v);
+        
+        // Normalize
+        let norm = Math.sqrt(
+            Av.reduce((sum, x) => sum + x*x, 0)
+        );
+        v = Av.map(x => x / norm);
+    }
+    
+    // Eigenvalue adalah Av[0] / v[0]
+    let Av = matrixMultiply(matrix, v);
+    return Av[0] / v[0];
+}</code></pre>
+                        </div>
+                        <p class="content-text"><strong>Use Case:</strong> PCA (Principal Component Analysis) menggunakan eigenvector dari covariance matrix untuk dimensionality reduction. Ini digunakan dalam face recognition, image compression, dan data analysis.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="4" data-chapter="1">
+                    <div class="page-content">
+                        <h3 class="section-title">1.3 PCA & Dimensionality Reduction</h3>
+                        <p class="content-text">
+                            Principal Component Analysis (PCA) adalah teknik untuk mengurangi dimensi data sambil mempertahankan informasi penting. Dengan menemukan eigenvector dari covariance matrix, kita dapat mengidentifikasi arah varians maksimal dalam data.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Covariance Matrix:</strong></p>
+                            <p>Cov(X) = (1/n) * X^T * X</p>
+                            <p><strong>Dimensionality Reduction:</strong></p>
+                            <p>X_reduced = X * W (W = eigenvectors)</p>
+                        </div>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Python - PCA Implementation</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>import numpy as np
+
+def pca(X, n_components):
+    # Center data
+    X_centered = X - np.mean(X, axis=0)
+    
+    # Covariance matrix
+    cov_matrix = np.cov(X_centered.T)
+    
+    # Eigendecomposition
+    eigenvalues, eigenvectors = np.linalg.eig(cov_matrix)
+    
+    # Sort by eigenvalues
+    idx = eigenvalues.argsort()[::-1]
+    eigenvectors = eigenvectors[:, idx[:n_components]]
+    
+    # Project
+    return X_centered @ eigenvectors</code></pre>
+                        </div>
+                        <p class="content-text"><strong>Industri Real-world:</strong> Netflix menggunakan PCA untuk mengurangi dimensi movie features sebelum melatih recommendation system. Hasilnya adalah prediksi yang lebih cepat dengan akurasi tinggi.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="5" data-chapter="1">
+                    <div class="page-content">
+                        <h3 class="section-title">1.4 Tensor & Multi-dimensional Arrays</h3>
+                        <p class="content-text">
+                            Tensor adalah generalisasi dari matrix ke dimensi lebih tinggi. Scalar adalah tensor 0D, vector adalah tensor 1D, matrix adalah tensor 2D, dan tensor 3D+ disebut tensor sejati. Dalam deep learning, setiap batch data adalah tensor 4D: (batch_size, height, width, channels).
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Tensor Operations</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>// 3D Tensor: Image batch (2 images, 3x3, 3 channels)
+const imageBatch = [
+  [ // Image 1
+    [[255,0,0], [0,255,0], [0,0,255]],
+    [[128,128,0], [0,128,128], [128,0,128]],
+    [[64,64,64], [192,192,192], [32,32,32]]
+  ],
+  [ // Image 2 (same format)
+    [[255,0,0], [0,255,0], [0,0,255]],
+    [[128,128,0], [0,128,128], [128,0,128]],
+    [[64,64,64], [192,192,192], [32,32,32]]
+  ]
+];
+
+// Tensor shape: [2, 3, 3, 3]
+// Operations: reshape, transpose, slice, reduce</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <!-- Chapter 2: Calculus -->
+                <div class="page" data-page="6" data-chapter="2">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 2: Calculus</h2>
+                        <p class="chapter-subtitle">Fondasi Optimisasi & Machine Learning</p>
+                        <h3 class="section-title">2.1 Derivative & Gradient</h3>
+                        <p class="content-text">
+                            Calculus adalah jantung dari machine learning. Derivative mengukur laju perubahan fungsi. Dalam konteks ML, gradient adalah vector derivative yang menunjukkan arah peningkatan fungsi loss paling cepat. Backpropagation algorithm sepenuhnya bergantung pada chain rule dari calculus.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Derivative:</strong></p>
+                            <p>f'(x) = lim(h→0) [f(x+h) - f(x)] / h</p>
+                            <p><strong>Gradient (multivariable):</strong></p>
+                            <p>∇f = [∂f/∂x₁, ∂f/∂x₂, ..., ∂f/∂xₙ]</p>
+                        </div>
+                        <p class="content-text"><strong>Real-world Application:</strong> Setiap neural network menggunakan gradient untuk update weights. Jika loss = 0.5, dan gradient w.r.t. weight = -0.1, maka weight update = weight - learning_rate * (-0.1).</p>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="7" data-chapter="2">
+                    <div class="page-content">
+                        <h3 class="section-title">2.2 Gradient Descent & Optimization</h3>
+                        <p class="content-text">
+                            Gradient Descent adalah algoritma optimisasi iteratif yang digunakan untuk menemukan minimum fungsi. Algoritma ini adalah dasar dari semua algoritma training modern seperti Adam, RMSprop, dan SGD.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Gradient Descent</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>function gradientDescent(weights, data, labels, learningRate, epochs) {
+    const n = data.length;
+    
+    for (let epoch = 0; epoch < epochs; epoch++) {
+        // Compute predictions
+        let predictions = data.map(x => 
+            weights[0] + weights[1] * x[0]
+        );
+        
+        // Compute loss
+        let loss = predictions.reduce((sum, pred, i) => 
+            sum + Math.pow(pred - labels[i], 2), 0
+        ) / n;
+        
+        // Compute gradients
+        let grad0 = 0, grad1 = 0;
+        for (let i = 0; i < n; i++) {
+            let error = predictions[i] - labels[i];
+            grad0 += 2 * error / n;
+            grad1 += 2 * error * data[i][0] / n;
+        }
+        
+        // Update weights
+        weights[0] -= learningRate * grad0;
+        weights[1] -= learningRate * grad1;
+        
+        if (epoch % 100 === 0) console.log(`Epoch ${epoch}: Loss = ${loss}`);
+    }
+    
+    return weights;
+}</code></pre>
+                        </div>
+                        <p class="content-text"><strong>Industry Case:</strong> Google menggunakan advanced gradient descent variants untuk training BERT model dengan 340 million parameters. Efficiency dalam gradient computation adalah kunci.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="8" data-chapter="2">
+                    <div class="page-content">
+                        <h3 class="section-title">2.3 Jacobian & Hessian Matrix</h3>
+                        <p class="content-text">
+                            Jacobian adalah matrix dari semua first-order partial derivatives. Hessian adalah matrix dari second-order partial derivatives. Keduanya penting untuk understanding convergence dan optimization landscape.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Jacobian Matrix J:</strong></p>
+                            <p>J = [∂f₁/∂x₁  ∂f₁/∂x₂  ...  ∂f₁/∂xₙ]</p>
+                            <p>    [∂f₂/∂x₁  ∂f₂/∂x₂  ...  ∂f₂/∂xₙ]</p>
+                            <p><strong>Hessian Matrix H:</strong></p>
+                            <p>H = [∂²f/∂x₁²    ∂²f/∂x₁∂x₂  ...]</p>
+                            <p>    [∂²f/∂x₂∂x₁  ∂²f/∂x₂²    ...]</p>
+                        </div>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <!-- Chapter 3: Discrete Mathematics -->
+                <div class="page" data-page="9" data-chapter="3">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 3: Discrete Mathematics</h2>
+                        <p class="chapter-subtitle">Algoritma, Struktur Data & Graph Theory</p>
+                        <h3 class="section-title">3.1 Graph Theory Fundamentals</h3>
+                        <p class="content-text">
+                            Graph Theory adalah study tentang graphs, yang terdiri dari vertices (nodes) dan edges (connections). Hampir setiap problem kompleks di computer science dapat direpresentasikan sebagai graph: social networks, routing algorithms, dependency resolution, dan recommendation systems.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Graph Representation:</strong></p>
+                            <p>G = (V, E) di mana:</p>
+                            <p>V = set of vertices</p>
+                            <p>E = set of edges (pairs of vertices)</p>
+                            <p><strong>Degree:</strong> deg(v) = jumlah edges yang connect ke vertex v</p>
+                        </div>
+                        <p class="content-text"><strong>Real-world Example:</strong> Facebook graph memiliki 3 billion vertices (users) dan 150+ billion edges (friendships). Graph algorithm seperti BFS digunakan untuk "people you may know" recommendations.</p>
+                        <div class="difficulty-badge difficulty-easy">Easy</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="10" data-chapter="3">
+                    <div class="page-content">
+                        <h3 class="section-title">3.2 Graph Algorithms: DFS & BFS</h3>
+                        <p class="content-text">
+                            Depth-First Search (DFS) dan Breadth-First Search (BFS) adalah dua fundamental graph traversal algorithms. DFS menggunakan stack dan traverse ke depth maksimal dulu, sedangkan BFS menggunakan queue dan explore level demi level.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - DFS & BFS Implementation</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>// Adjacency List Graph
+class Graph {
+    constructor() {
+        this.graph = new Map();
+    }
+    
+    addEdge(u, v) {
+        if (!this.graph.has(u)) this.graph.set(u, []);
+        this.graph.get(u).push(v);
+    }
+    
+    // DFS - menggunakan recursion/stack
+    dfs(start, visited = new Set()) {
+        visited.add(start);
+        console.log(start);
+        
+        if (this.graph.has(start)) {
+            for (let neighbor of this.graph.get(start)) {
+                if (!visited.has(neighbor)) {
+                    this.dfs(neighbor, visited);
+                }
+            }
+        }
+    }
+    
+    // BFS - menggunakan queue
+    bfs(start) {
+        const visited = new Set([start]);
+        const queue = [start];
+        
+        while (queue.length > 0) {
+            let node = queue.shift();
+            console.log(node);
+            
+            if (this.graph.has(node)) {
+                for (let neighbor of this.graph.get(node)) {
+                    if (!visited.has(neighbor)) {
+                        visited.add(neighbor);
+                        queue.push(neighbor);
+                    }
+                }
+            }
+        }
+    }
+}</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="11" data-chapter="3">
+                    <div class="page-content">
+                        <h3 class="section-title">3.3 Combinatorics & Logic</h3>
+                        <p class="content-text">
+                            Combinatorics adalah study tentang counting dan arrangement. Permutasi, kombinasi, dan generating sets adalah fundamental untuk solving optimization problems dan understanding complexity.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Permutation:</strong> P(n,r) = n! / (n-r)!</p>
+                            <p><strong>Combination:</strong> C(n,r) = n! / (r!(n-r)!)</p>
+                            <p><strong>Boolean Logic:</strong></p>
+                            <p>AND (∧): True hanya jika keduanya True</p>
+                            <p>OR (∨): True jika minimal satu True</p>
+                            <p>NOT (¬): Negasi dari nilai</p>
+                        </div>
+                        <p class="content-text"><strong>Industry Use:</strong> Combinatorics digunakan dalam cryptography untuk menghitung possible keys, dalam algorithm design untuk counting solutions, dan dalam networking untuk routing path calculation.</p>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <!-- Chapter 4: Probability & Statistics -->
+                <div class="page" data-page="12" data-chapter="4">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 4: Probability & Statistics</h2>
+                        <p class="chapter-subtitle">Data Analysis & Machine Learning Foundations</p>
+                        <h3 class="section-title">4.1 Bayesian Theorem & Inference</h3>
+                        <p class="content-text">
+                            Bayes' theorem adalah fundamental dalam probabilistic reasoning dan machine learning. Formula ini memungkinkan kita untuk compute P(A|B) dari P(B|A), yang adalah dasar dari Bayesian networks dan probabilistic models.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Bayes' Theorem:</strong></p>
+                            <p>P(A|B) = P(B|A) * P(A) / P(B)</p>
+                            <p>di mana:</p>
+                            <p>P(A|B) = posterior probability</p>
+                            <p>P(B|A) = likelihood</p>
+                            <p>P(A) = prior probability</p>
+                            <p>P(B) = evidence</p>
+                        </div>
+                        <p class="content-text"><strong>Real-world Application:</strong> Spam email filters menggunakan Naive Bayes untuk classify emails. P(Spam|Words) dihitung dari historical data tentang seberapa sering kata-kata tertentu muncul di spam emails.</p>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="13" data-chapter="4">
+                    <div class="page-content">
+                        <h3 class="section-title">4.2 Gaussian Distribution & Normal Distribution</h3>
+                        <p class="content-text">
+                            Gaussian (Normal) Distribution adalah distribution paling penting dalam statistics dan ML. Hampir semua machine learning algorithms assume atau menggunakan Gaussian distribution untuk model assumptions. Central Limit Theorem menyatakan bahwa sum dari random variables akan approximately normally distributed.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Gaussian PDF:</strong></p>
+                            <p>f(x) = (1 / (σ√(2π))) * e^(-(x-μ)² / (2σ²))</p>
+                            <p>di mana:</p>
+                            <p>μ = mean (center)</p>
+                            <p>σ = standard deviation (spread)</p>
+                        </div>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Gaussian Distribution</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>function gaussianPDF(x, mean, stdDev) {
+    const numerator = Math.exp(
+        -Math.pow(x - mean, 2) / (2 * Math.pow(stdDev, 2))
+    );
+    const denominator = stdDev * Math.sqrt(2 * Math.PI);
+    return numerator / denominator;
+}
+
+// Generate Gaussian distribution
+function generateGaussian(mean, stdDev, samples) {
+    let result = [];
+    for (let i = 0; i < samples; i++) {
+        // Box-Muller transform untuk generate normal random
+        let u1 = Math.random();
+        let u2 = Math.random();
+        let z0 = Math.sqrt(-2 * Math.log(u1)) * 
+                 Math.cos(2 * Math.PI * u2);
+        result.push(mean + z0 * stdDev);
+    }
+    return result;
+}</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="14" data-chapter="4">
+                    <div class="page-content">
+                        <h3 class="section-title">4.3 Markov Chain & Entropy</h3>
+                        <p class="content-text">
+                            Markov Chain adalah model probabilistik di mana state masa depan hanya bergantung pada state saat ini, bukan historical states. Entropy mengukur uncertainty atau randomness dalam sistem. Shannon Entropy fundamental untuk information theory, compression, dan cryptography.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Markov Property:</strong></p>
+                            <p>P(Xₙ₊₁ | Xₙ, Xₙ₋₁, ..., X₁) = P(Xₙ₊₁ | Xₙ)</p>
+                            <p><strong>Shannon Entropy:</strong></p>
+                            <p>H(X) = -Σ P(x) * log₂(P(x))</p>
+                        </div>
+                        <p class="content-text"><strong>Use Case:</strong> Google PageRank algorithm adalah Markov Chain yang models web surfing. Entropy digunakan dalam decision trees untuk measuring information gain di setiap split.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <!-- Chapter 5: Computational Complexity -->
+                <div class="page" data-page="15" data-chapter="5">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 5: Computational Complexity</h2>
+                        <p class="chapter-subtitle">Algorithm Analysis & Performance Optimization</p>
+                        <h3 class="section-title">5.1 Big O Notation & Complexity Analysis</h3>
+                        <p class="content-text">
+                            Big O notation adalah mathematical way untuk describe algorithm's running time berdasarkan input size. Understanding complexity adalah crucial untuk menulis scalable code. O(1) adalah constant time, O(n) adalah linear, O(n²) adalah quadratic, O(log n) adalah logarithmic.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Big O Classes (dari fastest ke slowest):</strong></p>
+                            <p>O(1) - Constant</p>
+                            <p>O(log n) - Logarithmic (binary search)</p>
+                            <p>O(n) - Linear (single loop)</p>
+                            <p>O(n log n) - Linear logarithmic (merge sort)</p>
+                            <p>O(n²) - Quadratic (nested loop)</p>
+                            <p>O(n³) - Cubic</p>
+                            <p>O(2ⁿ) - Exponential (brute force)</p>
+                            <p>O(n!) - Factorial</p>
+                        </div>
+                        <p class="content-text"><strong>Real Impact:</strong> Untuk n=1,000,000: O(n) = 1 juta ops (instant), O(n log n) = 20 juta ops (instant), O(n²) = 1 trillion ops (seconds to minutes), O(2ⁿ) = impossible.</p>
+                        <div class="difficulty-badge difficulty-easy">Easy</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="16" data-chapter="5">
+                    <div class="page-content">
+                        <h3 class="section-title">5.2 NP Completeness & Optimization Problems</h3>
+                        <p class="content-text">
+                            NP (Nondeterministic Polynomial time) adalah class dari problems di mana solusi dapat di-verify dalam polynomial time. NP-Complete problems adalah hardest problems dalam NP. Jika salah satu NP-Complete problem dapat di-solve dalam polynomial time, maka semua dapat diselesaikan (P = NP).
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Problem Classes:</strong></p>
+                            <p>P: Dapat di-solve dalam polynomial time</p>
+                            <p>NP: Solusi dapat di-verify dalam polynomial time</p>
+                            <p>NP-Complete: Semua NP problems dapat di-reduce ke ini</p>
+                            <p>NP-Hard: Minimal sesulit NP-Complete (mungkin harder)</p>
+                        </div>
+                        <p class="content-text"><strong>Famous NP-Complete Problems:</strong> Traveling Salesman Problem (TSP), Knapsack Problem, Graph Coloring, SAT (Boolean Satisfiability). Solusi optimal memerlukan exponential time.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="17" data-chapter="5">
+                    <div class="page-content">
+                        <h3 class="section-title">5.3 Recursion & Recursion Tree Analysis</h3>
+                        <p class="content-text">
+                            Recursion adalah technique di mana function memanggil dirinya sendiri. Recursion tree adalah visual representation untuk analyze complexity dari recursive algorithms. Master Theorem dapat digunakan untuk solve recurrence relations.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Recursion Complexity Analysis</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>// Linear: O(n)
+function linearRecursion(n) {
+    if (n <= 0) return;
+    console.log(n);
+    linearRecursion(n - 1);
+}
+
+// Binary: O(2^n) - exponential!
+function fibonacci(n) {
+    if (n <= 1) return n;
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+
+// Binary tree: O(log n) dengan memoization
+const memo = {};
+function fibMemo(n) {
+    if (n in memo) return memo[n];
+    if (n <= 1) return n;
+    
+    let result = fibMemo(n-1) + fibMemo(n-2);
+    memo[n] = result;
+    return result;
+}
+
+// Merge Sort: O(n log n)
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    
+    let mid = Math.floor(arr.length / 2);
+    let left = mergeSort(arr.slice(0, mid));
+    let right = mergeSort(arr.slice(mid));
+    
+    return merge(left, right);
+}</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <!-- Chapter 6: Cryptography Mathematics -->
+                <div class="page" data-page="18" data-chapter="6">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 6: Cryptography Mathematics</h2>
+                        <p class="chapter-subtitle">Security, Encryption & Privacy</p>
+                        <h3 class="section-title">6.1 Modular Arithmetic & RSA</h3>
+                        <p class="content-text">
+                            Modular arithmetic adalah arithmetic pada integers modulo n. RSA encryption bergantung sepenuhnya pada computational difficulty dari factoring large numbers. RSA adalah foundation dari modern public-key cryptography dan digunakan di HTTPS, digital signatures, dan blockchain.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>RSA Key Generation:</strong></p>
+                            <p>1. Choose two large primes p dan q</p>
+                            <p>2. n = p * q (public modulus)</p>
+                            <p>3. φ(n) = (p-1)(q-1) (Euler's totient)</p>
+                            <p>4. Find e (1 < e < φ(n)) dengan gcd(e, φ(n)) = 1</p>
+                            <p>5. Find d: (e * d) mod φ(n) = 1</p>
+                            <p><strong>Encryption:</strong> c = m^e mod n</p>
+                            <p><strong>Decryption:</strong> m = c^d mod n</p>
+                        </div>
+                        <p class="content-text"><strong>Industry Impact:</strong> Setiap HTTPS connection yang anda lakukan menggunakan RSA untuk secure key exchange. Banking, e-commerce, dan komunikasi sensitive semua bergantung pada hardness dari integer factorization.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="19" data-chapter="6">
+                    <div class="page-content">
+                        <h3 class="section-title">6.2 Prime Numbers & Number Theory</h3>
+                        <p class="content-text">
+                            Prime numbers adalah integers lebih dari 1 yang hanya divisible oleh 1 dan dirinya sendiri. Fundamental Theorem of Arithmetic menyatakan setiap integer dapat di-uniquely factored menjadi primes. Primality testing dan efficient prime generation adalah critical untuk cryptography.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Prime Number Generation</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>// Efficient primality test (Miller-Rabin)
+function isPrime(n, k = 5) {
+    if (n < 2) return false;
+    if (n === 2 || n === 3) return true;
+    if (n % 2 === 0) return false;
+    
+    // Write n-1 as 2^r * d
+    let d = n - 1;
+    let r = 0;
+    while (d % 2 === 0) {
+        d /= 2;
+        r++;
+    }
+    
+    // Witness loop
+    for (let i = 0; i < k; i++) {
+        let a = 2 + Math.floor(Math.random() * (n - 4));
+        let x = modPow(a, d, n);
+        
+        if (x === 1 || x === n - 1) continue;
+        
+        let composite = true;
+        for (let j = 0; j < r - 1; j++) {
+            x = modPow(x, 2, n);
+            if (x === n - 1) {
+                composite = false;
+                break;
+            }
+        }
+        if (composite) return false;
+    }
+    return true;
+}
+
+// Modular exponentiation: (base^exp) mod mod
+function modPow(base, exp, mod) {
+    let result = 1;
+    base = base % mod;
+    while (exp > 0) {
+        if (exp % 2 === 1) result = (result * base) % mod;
+        exp = Math.floor(exp / 2);
+        base = (base * base) % mod;
+    }
+    return result;
+}</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="20" data-chapter="6">
+                    <div class="page-content">
+                        <h3 class="section-title">6.3 Elliptic Curve & Modern Cryptography</h3>
+                        <p class="content-text">
+                            Elliptic Curve Cryptography (ECC) adalah modern alternative ke RSA yang provide same security dengan much smaller key sizes. ECC equations: y² = x³ + ax + b. ECDSA (Elliptic Curve Digital Signature Algorithm) digunakan untuk cryptocurrency signatures dan TLS certificates.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Elliptic Curve Equation:</strong></p>
+                            <p>y² ≡ x³ + ax + b (mod p)</p>
+                            <p><strong>Point Addition (Group Law):</strong></p>
+                            <p>P + Q = R (defined geometrically)</p>
+                            <p>P + P = 2P (point doubling)</p>
+                            <p><strong>Security Basis:</strong></p>
+                            <p>Elliptic Curve Discrete Logarithm Problem (ECDLP)</p>
+                        </div>
+                        <p class="content-text"><strong>Bitcoin & Blockchain:</strong> Bitcoin menggunakan secp256k1 elliptic curve. Private key (256 bits) dapat generate public key via curve multiplication. Security dari billions of dollars di blockchain bergantung pada hardness dari ECDLP.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <!-- Chapter 7: Numerical Methods -->
+                <div class="page" data-page="21" data-chapter="7">
+                    <div class="page-content">
+                        <h2 class="page-title">Chapter 7: Numerical Methods</h2>
+                        <p class="chapter-subtitle">Computational Mathematics & Simulation</p>
+                        <h3 class="section-title">7.1 Newton-Raphson & Root Finding</h3>
+                        <p class="content-text">
+                            Newton-Raphson adalah iterative method untuk finding roots (zeros) dari functions. Digunakan extensively dalam scientific computing, physics simulations, dan optimization. Convergence sangat cepat (quadratic) jika initial guess cukup dekat dengan root.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Newton-Raphson Formula:</strong></p>
+                            <p>xₙ₊₁ = xₙ - f(xₙ) / f'(xₙ)</p>
+                            <p>Iterasi sampai |xₙ₊₁ - xₙ| < ε (tolerance)</p>
+                        </div>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Newton-Raphson Implementation</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>// Find root dari f(x) = x^2 - 2 (sqrt(2))
+function newtonRaphson(f, fPrime, x0, epsilon = 1e-6, maxIter = 100) {
+    let x = x0;
+    
+    for (let i = 0; i < maxIter; i++) {
+        let fx = f(x);
+        let fpx = fPrime(x);
+        
+        if (Math.abs(fpx) < 1e-10) {
+            console.log("Derivative too small, cannot continue");
+            break;
+        }
+        
+        let xNext = x - fx / fpx;
+        
+        console.log(`Iteration ${i}: x = ${x}, f(x) = ${fx}`);
+        
+        if (Math.abs(xNext - x) < epsilon) {
+            console.log(`Converged to root: ${xNext}`);
+            return xNext;
+        }
+        
+        x = xNext;
+    }
+    
+    return x;
+}
+
+// Example: Find sqrt(2)
+let f = x => x * x - 2;
+let fPrime = x => 2 * x;
+let root = newtonRaphson(f, fPrime, 1.5);
+// Output: approximately 1.41421356 (sqrt(2))</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-medium">Medium</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="22" data-chapter="7">
+                    <div class="page-content">
+                        <h3 class="section-title">7.2 Numerical Integration & Interpolation</h3>
+                        <p class="content-text">
+                            Numerical integration adalah approximation dari definite integrals ketika analytical solution tidak possible. Interpolation adalah estimasi dari function values di points yang tidak dalam dataset. Keduanya fundamental dalam scientific computing, physics simulation, dan data analysis.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>Trapezoidal Rule:</strong></p>
+                            <p>∫ᵃᵇ f(x)dx ≈ (b-a)/2 * [f(a) + f(b)]</p>
+                            <p><strong>Simpson's Rule:</strong></p>
+                            <p>∫ᵃᵇ f(x)dx ≈ (b-a)/6 * [f(a) + 4f((a+b)/2) + f(b)]</p>
+                            <p><strong>Lagrange Interpolation:</strong></p>
+                            <p>L(x) = Σ yᵢ * Lᵢ(x) where Lᵢ(x) = ∏(x - xⱼ)/(xᵢ - xⱼ)</p>
+                        </div>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript - Simpson's Rule Integration</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code>function simpsonsRule(f, a, b, n = 100) {
+    // n harus even
+    if (n % 2 !== 0) n++;
+    
+    let h = (b - a) / n;
+    let sum = f(a) + f(b);
+    
+    // Odd indices: coefficient 4
+    for (let i = 1; i < n; i += 2) {
+        sum += 4 * f(a + i * h);
+    }
+    
+    // Even indices: coefficient 2
+    for (let i = 2; i < n; i += 2) {
+        sum += 2 * f(a + i * h);
+    }
+    
+    return (h / 3) * sum;
+}
+
+// Contoh: integrate sin(x) dari 0 sampai π
+let result = simpsonsRule(Math.sin, 0, Math.PI, 1000);
+console.log(`∫₀^π sin(x)dx ≈ ${result}`);
+// Expected: approximately 2.0</code></pre>
+                        </div>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="23" data-chapter="7">
+                    <div class="page-content">
+                        <h3 class="section-title">7.3 Floating Point Error & Stability</h3>
+                        <p class="content-text">
+                            Computer numbers tidak dapat represent semua real numbers dengan perfect precision. Floating point arithmetic introduce errors melalui rounding, truncation, dan accumulation. Understanding ini crucial untuk scientific computing di mana small errors dapat accumulate menjadi large inaccuracies.
+                        </p>
+                        <div class="formula-box">
+                            <p><strong>IEEE 754 Double Precision:</strong></p>
+                            <p>1 sign bit + 11 exponent bits + 52 mantissa bits = 64 bits</p>
+                            <p>Range: ≈ ±10^±308 dengan 15-17 significant digits</p>
+                            <p><strong>Machine Epsilon (ε):</strong></p>
+                            <p>Smallest x di mana 1 + x ≠ 1</p>
+                            <p>Untuk double: ≈ 2.22 × 10^-16</p>
+                        </div>
+                        <p class="content-text"><strong>Numerical Stability Example:</strong> Calculating y = x + 1 - x dalam floating point bisa give hasil yang salah. Jika x sangat besar, maka x + 1 = x (due to precision limits), sehingga result adalah 0 bukan 1. Solution: reformulate problem secara algebraic atau gunakan higher precision.</p>
+                        <div class="difficulty-badge difficulty-hard">Hard</div>
+                    </div>
+                </div>
+
+                <!-- Assessment Page -->
+                <div class="page" data-page="24">
+                    <div class="page-content">
+                        <h2 class="page-title">📊 Progress Assessment</h2>
+                        <div class="assessment-box">
+                            <h3>Your Learning Journey</h3>
+                            <div class="progress-bars">
+                                <div class="progress-item">
+                                    <span>Linear Algebra</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span>Calculus</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span>Discrete Math</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span>Probability</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span>Complexity</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span>Cryptography</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span>Numerical Methods</span>
+                                    <div class="progress-bar" style="--progress: 0%"></div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                            </div>
+                            <button id="startLearningBtn" class="cta-button">Start Learning Journey →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="nav-controls">
+                <button id="prevBtn" class="nav-btn-control" title="Previous Page (← Arrow)">
+                    <span>←</span>
+                </button>
+                <div class="page-counter">
+                    <span id="currentPage">1</span>
+                    <span>/</span>
+                    <span id="totalPages">25</span>
+                </div>
+                <button id="nextBtn" class="nav-btn-control" title="Next Page (→ Arrow)">
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Search Handbook</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="searchInput" class="search-input" placeholder="Cari topik, rumus, atau konsep...">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOC Modal -->
+    <div id="tocModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Table of Contents</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body modal-toc">
+                <div class="toc-modal-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bookmarks Modal -->
+    <div id="bookmarkModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Bookmarks</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="bookmarkList" class="bookmark-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Interactive Quiz</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="quizContent" class="quiz-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flashcard Modal -->
+    <div id="flashcardModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Formula Flashcards</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="flashcard-container">
+                    <div id="flashcard" class="flashcard">
+                        <div class="flashcard-inner"></div>
+                    </div>
+                    <div class="flashcard-controls">
+                        <button id="prevFlashcard" class="flashcard-btn">← Prev</button>
+                        <button id="nextFlashcard" class="flashcard-btn">Next →</button>
+                    </div>
+                    <div id="flashcardCounter" class="flashcard-counter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
